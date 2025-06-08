@@ -2,7 +2,7 @@ import React from "react";
 
 const CompanionsLibary = () => {
     return (
-        <div>CompanionsLibary</div>
+        <div>Companions Libary</div>
     )
 
 }
