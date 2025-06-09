@@ -1,4 +1,4 @@
-import {getAllCompanions} from "@/lib/actions/companion.actions";
+import {getAllCompanions, getAllMyCompanions} from "@/lib/actions/companion.actions";
 import CompanionCard from "@/components/CompanionCard";
 import {getSubjectColor} from "@/lib/utils";
 import SearchInput from "@/components/SearchInput";
@@ -24,12 +24,10 @@ const CompanionsLibary = async ({ searchParams}: SearchParams) => {
                     <CompanionCard key={companion.id}
                                    {...companion}
                                    color={getSubjectColor(companion.subject)}
-
                     />
                 ))}
             </section>
         </main>
     )
-
 }
 export default CompanionsLibary;
